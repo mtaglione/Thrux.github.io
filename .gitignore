@@ -1,0 +1,5 @@
+buildsense/localvenv
+buildsense/static/outputCSVs/
+.cache
+*~
+.DS_Store
