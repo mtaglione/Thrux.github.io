@@ -1,0 +1,683 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Properties Explorer &#8212; THRUX 1.0.0.33 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Identifying Design Flaws Using FlagTracker" href="../flagtracker/index-flag_tracker.html" />
+    <link rel="prev" title="Explorers / Utility Design Tools" href="../index-explorers_and_utility_tools.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="properties-explorer">
+<h1>Properties Explorer<a class="headerlink" href="#properties-explorer" title="Permalink to this headline">¶</a></h1>
+<p>The Properties Explorer displays the various properties associated with the current selection.</p>
+<img alt="../../../../_images/properties_explorer_1.PNG" class="align-center" src="../../../../_images/properties_explorer_1.PNG" />
+<p>The Properties Explorer displays the various properties associated with the current selection.</p>
+<img alt="../../../../_images/properties_explorer_2.PNG" class="align-center" src="../../../../_images/properties_explorer_2.PNG" />
+<p>The Properties Explorer displays the various properties associated with the current selection.</p>
+<img alt="../../../../_images/properties_explorer_3.PNG" class="align-center" src="../../../../_images/properties_explorer_3.PNG" />
+<p>For more property definitions and information, see below:</p>
+<table border="1" class="colwidths-auto docutils align-center" id="id1">
+<caption><span class="caption-text">Properties Explorer</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<tbody valign="top">
+<tr class="row-odd"><td>GENERAL PROPERTIES</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>PROPERTY NAME</td>
+<td>PROPERTY TYPE</td>
+<td>DESCRIPTION</td>
+</tr>
+<tr class="row-odd"><td>Name</td>
+<td>Equip.  General Properties</td>
+<td>Equipment Name</td>
+</tr>
+<tr class="row-even"><td>Room</td>
+<td>Equip.  General Properties</td>
+<td>Equipment location</td>
+</tr>
+<tr class="row-odd"><td>Priority</td>
+<td>Equip.  General Properties</td>
+<td>Equipment Priority is assigned here (Normal, EO1, EO2, Life Safety)</td>
+</tr>
+<tr class="row-even"><td>Is Existing</td>
+<td>Equip.  General Properties</td>
+<td>Equipment is existing</td>
+</tr>
+<tr class="row-odd"><td>Is Future</td>
+<td>Equip.  General Properties</td>
+<td>Equipment is intended for future installation</td>
+</tr>
+<tr class="row-even"><td>Load Capacity</td>
+<td>Load Properties</td>
+<td>For a Utility, Load Capacity is irrelevant</td>
+</tr>
+<tr class="row-odd"><td>Load Override</td>
+<td>Load Properties</td>
+<td>Intended to override load calculations</td>
+</tr>
+<tr class="row-even"><td>Voltage</td>
+<td>Load Properties</td>
+<td>Voltage is a read only property in most situations.  It is set at the source of power, i.e. utility, generator, or transformer.  Current available voltages: 13.8kV, 13.2kV, 5400V, 4160V, 480V, 460V, 277V, 208V, 120V</td>
+</tr>
+<tr class="row-odd"><td>Poles</td>
+<td>Load Properties</td>
+<td>Available Poles: 1,2,3,6,9</td>
+</tr>
+<tr class="row-even"><td>Power Factor</td>
+<td>Load Properties</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Custom Diversity Class</td>
+<td>Load Readings</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Diversity Position</td>
+<td>Load Readings</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>CONT. LOAD Connected Load</td>
+<td>Load Readings</td>
+<td>CONTINUOUS LOAD. ALL LOAD READINGS RETURNED IN KVA</td>
+</tr>
+<tr class="row-even"><td>DIVERS. RECPT. LOAD Code Demand Load</td>
+<td>Load Readings</td>
+<td>DIVERSIFIED RECEPTACLE LOAD</td>
+</tr>
+<tr class="row-odd"><td>Diversified Resi. Load</td>
+<td>Load Readings</td>
+<td>Diversified Residential Load</td>
+</tr>
+<tr class="row-even"><td>% Design Spare Capacity</td>
+<td>Load Readings</td>
+<td>Supplemental design factor based on Connected Load</td>
+</tr>
+<tr class="row-odd"><td>Net Design Spare Capacity</td>
+<td>Load Readings</td>
+<td>Summation of downstream % Design Spare Capacity</td>
+</tr>
+<tr class="row-even"><td>Net Load</td>
+<td>Load Readings</td>
+<td>Sum of Continuous Load, Diversified Receptacle Load, Diversified Residential Load, and Design Spare Capacity</td>
+</tr>
+<tr class="row-odd"><td>Max Capacity</td>
+<td>Load Readings</td>
+<td>kVA value of Load Capacity</td>
+</tr>
+<tr class="row-even"><td>% Loaded</td>
+<td>Load Readings</td>
+<td>Connected Load / Load Capacity</td>
+</tr>
+<tr class="row-odd"><td>VD% Incoming</td>
+<td>Network Readings</td>
+<td>Volts Dropped Percentage at the loadside of upstream equipment</td>
+</tr>
+<tr class="row-even"><td>VD% Net</td>
+<td>Network Readings</td>
+<td>Total volts dropped percentage at the current node of the distribution system</td>
+</tr>
+<tr class="row-odd"><td>SCC Incoming</td>
+<td>Network Readings</td>
+<td>Available short circuit current at the upstream node</td>
+</tr>
+<tr class="row-even"><td>SCC Net</td>
+<td>Network Readings</td>
+<td>Total short circuit current at the current node of the distribution system</td>
+</tr>
+<tr class="row-odd"><td>CIRCUIT PROPERTIES</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>PROPERTY NAME</td>
+<td>PROPERTY TYPE</td>
+<td>DESCRIPTION</td>
+</tr>
+<tr class="row-odd"><td># Sets</td>
+<td>Cable Properties</td>
+<td>Quantity of sets</td>
+</tr>
+<tr class="row-even"><td># Phase Legs</td>
+<td>Cable Properties</td>
+<td>Phase legs, default is 3 for 3-phase loads</td>
+</tr>
+<tr class="row-odd"><td>Phase Size</td>
+<td>Cable Properties</td>
+<td>Phase size</td>
+</tr>
+<tr class="row-even"><td># Neutrals</td>
+<td>Cable Properties</td>
+<td>Quantity of neutral conductors</td>
+</tr>
+<tr class="row-odd"><td>Neutral Size</td>
+<td>Cable Properties</td>
+<td>Neutral Size</td>
+</tr>
+<tr class="row-even"><td># Grounds</td>
+<td>Cable Properties</td>
+<td>Quantity of Ground Conductors</td>
+</tr>
+<tr class="row-odd"><td>Ground Size</td>
+<td>Cable Properties</td>
+<td>Ground Size</td>
+</tr>
+<tr class="row-even"><td>Insulation Type</td>
+<td>Cable Properties</td>
+<td>Insulation Type - Current Available Types: THHN, XHHW, RHH</td>
+</tr>
+<tr class="row-odd"><td>Conductor Material</td>
+<td>Cable Properties</td>
+<td>Conductor Type - Current Available Types: CU. AL.</td>
+</tr>
+<tr class="row-even"><td>Temperature Rating</td>
+<td>Cable Properties</td>
+<td>Temperature Threshold - Current Available Temperatures: 60, 75, 90 Degrees Celsius</td>
+</tr>
+<tr class="row-odd"><td>Is Non-Linear</td>
+<td>Cable Properties</td>
+<td>Non-linear loads cause the neutral conductor to carry current, which introduces notchs and ringing effects which cause distortions in the sinusoidal waveform</td>
+</tr>
+<tr class="row-even"><td>Raceway Type</td>
+<td>Conduit Properties</td>
+<td>Raceway Type - Current Available Types: EMT, RMC, PVC (SC. 40), PVC (SC. 80), LFMC</td>
+</tr>
+<tr class="row-odd"><td>Raceway Size</td>
+<td>Conduit Properties</td>
+<td>Raceway Size</td>
+</tr>
+<tr class="row-even"><td>NETWORK PROPERTIES</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>PROPERTY NAME</td>
+<td>PROPERTY TYPE</td>
+<td>DESCRIPTION</td>
+</tr>
+<tr class="row-even"><td>Riser</td>
+<td>Network Properties</td>
+<td>Riser as defined in Architectural Elements</td>
+</tr>
+<tr class="row-odd"><td>Manual Added Length</td>
+<td>Network Properties</td>
+<td>Supplemental length to Calculated Length.  The default value can be modified in Settings</td>
+</tr>
+<tr class="row-even"><td>Calc. Length</td>
+<td>Network Properties</td>
+<td>Calculated distance dependent on room locations defined in Architectural Elements</td>
+</tr>
+<tr class="row-odd"><td>Net Length</td>
+<td>Network Properties</td>
+<td>Sum of Manual Added Length and Calculated Length</td>
+</tr>
+<tr class="row-even"><td>VD% Incoming</td>
+<td>Network Properties</td>
+<td>Volts dropped percentage at the loadside of upstream equipment</td>
+</tr>
+<tr class="row-odd"><td>VD% Run</td>
+<td>Network Properties</td>
+<td>Volts dropped percentage across selected run</td>
+</tr>
+<tr class="row-even"><td>VD% Net</td>
+<td>Network Properties</td>
+<td>Total volts dropped percentage at the current nde of the distribution system</td>
+</tr>
+<tr class="row-odd"><td>Net Amperage</td>
+<td>Network Properties</td>
+<td>Current draw of the entire downstream network from a node</td>
+</tr>
+<tr class="row-even"><td>SCC Incoming</td>
+<td>Network Properties</td>
+<td>Amount of available short circuit current at upstream node</td>
+</tr>
+<tr class="row-odd"><td>SCC Net</td>
+<td>Network Properties</td>
+<td>Amount of available short circuit current at current node</td>
+</tr>
+<tr class="row-even"><td>UTILITY PROPERTIES</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>PROPERTY NAME</td>
+<td>PROPERTY TYPE</td>
+<td>DESCRIPTION</td>
+</tr>
+<tr class="row-even"><td>Available SCC (kA)</td>
+<td>Source Properties</td>
+<td>Available short circuit current from the utility</td>
+</tr>
+<tr class="row-odd"><td>Voltage Distortion</td>
+<td>Source Properties</td>
+<td>Voltage distortion</td>
+</tr>
+<tr class="row-even"><td>GENERATOR PROPERTIES</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>PROPERTY NAME</td>
+<td>PROPERTY TYPE</td>
+<td>DESCRIPTION</td>
+</tr>
+<tr class="row-even"><td>Subtransient Reactance</td>
+<td>Source Properties</td>
+<td>Subtransient Reactance, used to determine the available short circuit current</td>
+</tr>
+<tr class="row-odd"><td>SCC Net</td>
+<td>Source Properties</td>
+<td>Returns the total short circuit current at the current node of the distribution system</td>
+</tr>
+<tr class="row-even"><td>DISTRIBUTION BOARD PROPERTIES</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>PROPERTY NAME</td>
+<td>PROPERTY TYPE</td>
+<td>DESCRIPTION</td>
+</tr>
+<tr class="row-even"><td>MCB</td>
+<td>Bus Structure</td>
+<td>Main circuit breaker</td>
+</tr>
+<tr class="row-odd"><td>Neutral Bus</td>
+<td>Bus Structure</td>
+<td>Boolean, Default value: True</td>
+</tr>
+<tr class="row-even"><td>200% Neutral Nus</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-odd"><td>Ground Bus</td>
+<td>Bus Structure</td>
+<td>Boolean, Default value: True</td>
+</tr>
+<tr class="row-even"><td>Isolated Ground Bus</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-odd"><td>Top Fed</td>
+<td>Construction</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-even"><td>Flush Mount</td>
+<td>Construction</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-odd"><td>Enclosure</td>
+<td>Construction</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-even"><td>Volt Meter</td>
+<td>Accessories</td>
+<td>Boolean, Default value: True</td>
+</tr>
+<tr class="row-odd"><td>SPD</td>
+<td>Accessories</td>
+<td>Boolean, Default value: True</td>
+</tr>
+<tr class="row-even"><td>Power Meter</td>
+<td>Accessories</td>
+<td>Boolean, Default value: True</td>
+</tr>
+<tr class="row-odd"><td>PANELBOARD PROPERTIES</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>PROPERTY NAME</td>
+<td>PROPERTY TYPE</td>
+<td>DESCRIPTION</td>
+</tr>
+<tr class="row-odd"><td>MCB</td>
+<td>Bus Structure</td>
+<td>Boolean, Default: True</td>
+</tr>
+<tr class="row-even"><td>Neutral Bus</td>
+<td>Bus Structure</td>
+<td>Boolean, Default: True</td>
+</tr>
+<tr class="row-odd"><td>200% Neutral Bus</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-even"><td>Ground Bus</td>
+<td>Bus Structure</td>
+<td>Boolean, Default: True</td>
+</tr>
+<tr class="row-odd"><td>Isolated Ground Bus</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-even"><td>Bolt On Breaker</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-odd"><td>Top Fed</td>
+<td>Construction</td>
+<td>Boolean, Default: True</td>
+</tr>
+<tr class="row-even"><td>Flush Mount</td>
+<td>Construction</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-odd"><td>Enclosure</td>
+<td>Construction</td>
+<td>Available Types - NEMA 1, NEMA 3, NEMA 3R, NEMA 4, NEMA 4X, NEMA 12.  Default value: NEMA 1</td>
+</tr>
+<tr class="row-even"><td>Door in Door</td>
+<td>Construction</td>
+<td>Boolean, Default: True</td>
+</tr>
+<tr class="row-odd"><td>Stainless Steel</td>
+<td>Construction</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-even"><td>Feed Through</td>
+<td>Construction</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-odd"><td>Volt Meter</td>
+<td>Accessories</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-even"><td>SPD</td>
+<td>Accessories</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-odd"><td>Power Meter</td>
+<td>Accessories</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-even"><td>Branch Circuit Meter</td>
+<td>Accessories</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-odd"><td>Split Bus Meter</td>
+<td>Accessories</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-even"><td>BUS DUCT PROPERTIES</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>PROPERTY NAME</td>
+<td>PROPERTY TYPE</td>
+<td>DESCRIPTION</td>
+</tr>
+<tr class="row-even"><td>Room</td>
+<td>Equip.  General Properties</td>
+<td>Represents the point of transition from pipe and wire to bus duct.  Bus duct lengths are calculated depeneded on the branch load location.  Branch lengths are calculated from the bus duct location to the branch load locations</td>
+</tr>
+<tr class="row-odd"><td>Conductor Type</td>
+<td>Bus Structure</td>
+<td>Conductor Type - Available Types: Cu, Al. Default Value: Cu</td>
+</tr>
+<tr class="row-even"><td>Neutral Bus</td>
+<td>Bus Structure</td>
+<td>Boolean, Default value: True</td>
+</tr>
+<tr class="row-odd"><td>200% Neutral Bus</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-even"><td>Ground Bus</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-odd"><td>Isolated Ground Bus</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-even"><td>Top Fed</td>
+<td>Bus Structure</td>
+<td>Boolean, Default value: True</td>
+</tr>
+<tr class="row-odd"><td>MECHANICAL PROPERTIES</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>PROPERTY NAME</td>
+<td>PROPERTY TYPE</td>
+<td>DESCRIPTION</td>
+</tr>
+<tr class="row-odd"><td>VFD</td>
+<td>Mechanical Properties</td>
+<td>Boolean - Variable Frequency Drive</td>
+</tr>
+<tr class="row-even"><td>Qty Motors</td>
+<td>Mechanical Properties</td>
+<td>Quantity of Motors</td>
+</tr>
+<tr class="row-odd"><td>MOTOR</td>
+<td>Mechanical Properties</td>
+<td>Motor Size + Load Unit</td>
+</tr>
+<tr class="row-even"><td>XFMR PROPERTIES</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>PROPERTY NAME</td>
+<td>PROPERTY TYPE</td>
+<td>DESCRIPTION</td>
+</tr>
+<tr class="row-even"><td>Primary Winding</td>
+<td>Construction</td>
+<td>Primary Winding - Available windings: Delta, Wye</td>
+</tr>
+<tr class="row-odd"><td>Secondary Winding</td>
+<td>Construction</td>
+<td>Secondary Winding - Available windings: Delta, Wye</td>
+</tr>
+<tr class="row-even"><td>Primary Voltage</td>
+<td>Construction</td>
+<td>Primary Voltage</td>
+</tr>
+<tr class="row-odd"><td>Secondary Voltage</td>
+<td>Construction</td>
+<td>Secondary Voltage</td>
+</tr>
+<tr class="row-even"><td>Overload Rating</td>
+<td>Construction</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Percent Impedance</td>
+<td>Construction</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>K Rating</td>
+<td>Construction</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>XFMR Type</td>
+<td>Construction</td>
+<td>Dry Type, Cast Coil Type, VPI, Liquid</td>
+</tr>
+<tr class="row-even"><td>Temperature Rise</td>
+<td>Construction</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Grounding Type</td>
+<td>Construction</td>
+<td>Solid, Low Resistance, High Resistance</td>
+</tr>
+<tr class="row-even"><td>Insulation Rating</td>
+<td>Construction</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Primary BIL</td>
+<td>Construction</td>
+<td>Basic Impulse Level - A method expressing the voltage surge that a transformer will tolerate without breakdown</td>
+</tr>
+<tr class="row-even"><td>Secondary BIL</td>
+<td>Construction</td>
+<td>Basic Impulse Level - A method expressing the voltage surge that a transformer will tolerate without breakdown</td>
+</tr>
+<tr class="row-odd"><td>ARCHITECTURAL LOAD PROPERTIES</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>PROPERTY NAME</td>
+<td>PROPERTY TYPE</td>
+<td>DESCRIPTION</td>
+</tr>
+<tr class="row-odd"><td>Room, Floor, Packages, Apartments, Apt. Packages</td>
+<td>&#160;</td>
+<td>Allows user to extract entities from the power density model as packages and model them as loads</td>
+</tr>
+<tr class="row-even"><td>ATS PROPERTIES</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>PROPERTY NAME</td>
+<td>PROPERTY TYPE</td>
+<td>DESCRIPTION</td>
+</tr>
+<tr class="row-even"><td>Bypass Isolation</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-odd"><td>Neutral Construction</td>
+<td>Bus Structure</td>
+<td>Available Types - Solid, Switched, Overlapping</td>
+</tr>
+<tr class="row-even"><td>Neutral Bus</td>
+<td>Bus Structure</td>
+<td>Boolean, Default value: True</td>
+</tr>
+<tr class="row-odd"><td>200% Neutral Bus</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-even"><td>Ground Bus</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-odd"><td>Isolated Ground Bus</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+<tr class="row-even"><td>Static</td>
+<td>Bus Structure</td>
+<td>Boolean</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../index.html">THRUX</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/index-thrux.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index-user_guide.html"><strong>General Navigation Overview</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index-user_guide.html#getting-started"><strong>Getting Started</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../projectsettings/index-creating_a_new_project.html">Creating a New Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../definingarchitecturalelements/index-defining_architectural_elements.html">Defining Architectural Elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../buildingelectricalmodel/index-building_electrical_model.html">Building the Electrical Model</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index-explorers_and_utility_tools.html">Explorers / Utility Design Tools</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Properties Explorer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../flagtracker/index-flag_tracker.html">Identifying Design Flaws Using FlagTracker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../issuancelog/index-issuance_log.html">Branching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cascademonitor/index-cascade_monitor.html">Cascade Monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pricetracker/index-price_tracker.html">Pricing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scenariomanager/index-scenario_manager.html">Scenario Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dataexporter/index-data_exporter.html">Data Exporter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../statusbar/index-status_bar.html">Status Bar</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../utilityworkspaces/index-utility_workspaces.html">Utility Workspaces</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ's</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html#architectural">Architectural</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html#electrical-calculations">Electrical Calculations</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index-user_guide.html"><strong>General Navigation Overview</strong></a><ul>
+  <li><a href="../index-explorers_and_utility_tools.html">Explorers / Utility Design Tools</a><ul>
+      <li>Previous: <a href="../index-explorers_and_utility_tools.html" title="previous chapter">Explorers / Utility Design Tools</a></li>
+      <li>Next: <a href="../flagtracker/index-flag_tracker.html" title="next chapter">Identifying Design Flaws Using FlagTracker</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, KT.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../../../../_sources/source/userguide/explorersandutilitytools/propertiesexplorer/index-properties_explorer.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
