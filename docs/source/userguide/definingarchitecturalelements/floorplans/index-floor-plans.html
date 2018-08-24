@@ -1,0 +1,179 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Setup Wizard &#8212; THRUX 1.0.0.33 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Building the Electrical Model" href="../../buildingelectricalmodel/index-building_electrical_model.html" />
+    <link rel="prev" title="Architectural Elements" href="../archelements/index-arch-elements.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="setup-wizard">
+<h1>Setup Wizard<a class="headerlink" href="#setup-wizard" title="Permalink to this headline">¶</a></h1>
+<p>Use the Setup Wizard to create the columns and floors of your project.</p>
+<img alt="../../../../_images/setup_wizard.PNG" class="align-center" src="../../../../_images/setup_wizard.PNG" />
+<p>You can create multiple columns and floors at a time by specifying a distance in between each.  These can be individually modified in Architectural Elements.</p>
+<img alt="../../../../_images/column_creator.PNG" class="align-center" src="../../../../_images/column_creator.PNG" />
+<p>Cycle through floors by selecting the floor on the left side bar.</p>
+<img alt="../../../../_images/floor_selection.PNG" class="align-center" src="../../../../_images/floor_selection.PNG" />
+</div>
+<div class="section" id="grid-editor">
+<h1>Grid Editor<a class="headerlink" href="#grid-editor" title="Permalink to this headline">¶</a></h1>
+<p>Use the Grid Editor to modify the spacing in between columns.</p>
+<img alt="../../../../_images/grid_editor.PNG" class="align-center" src="../../../../_images/grid_editor.PNG" />
+</div>
+<div class="section" id="creating-rooms">
+<h1>Creating Rooms<a class="headerlink" href="#creating-rooms" title="Permalink to this headline">¶</a></h1>
+<p>Once floors are created, create a room by hovering your mouse between column regions, and clicking Add Room.</p>
+<img alt="../../../../_images/room_creation.PNG" class="align-center" src="../../../../_images/room_creation.PNG" />
+<p>To create a room in a common location spanning multiple floors, use Shift+Click to select multiple floors, and then hover over a grid region to click Add Room.</p>
+<img alt="../../../../_images/multi_room.PNG" class="align-center" src="../../../../_images/multi_room.PNG" />
+</div>
+<div class="section" id="risers">
+<h1>Risers<a class="headerlink" href="#risers" title="Permalink to this headline">¶</a></h1>
+<p>Risers are shafts or spaces which are designated for groups of pipes to route to and from distribution equipment.</p>
+<p>Therefore, instead of routing directly from a distribution equipment to a load, the route can offset through a riser shaft before terminating at the load.</p>
+<p>To create a Riser, in the Floor Plans workspace, select a group of floors which the riser will span.  Use Shift+Click to multi-select.  Then hover over a grid region, and select Add Riser.  This can also be modified in Architectural Elements.</p>
+<img alt="../../../../_images/riser.PNG" class="align-center" src="../../../../_images/riser.PNG" />
+</div>
+<div class="section" id="moving-rooms-risers">
+<h1>Moving Rooms / Risers<a class="headerlink" href="#moving-rooms-risers" title="Permalink to this headline">¶</a></h1>
+<p>Once rooms or risers are created, move a room or riser by clicking and dragging it to the new region.</p>
+<img alt="../../../../_images/move_room.PNG" class="align-center" src="../../../../_images/move_room.PNG" />
+</div>
+<div class="section" id="conduit-lengths">
+<h1>Conduit Lengths<a class="headerlink" href="#conduit-lengths" title="Permalink to this headline">¶</a></h1>
+<p>Conduit lengths are determined by a starting location, and an ending location.</p>
+<img alt="../../../../_images/conduit_lengths_1.PNG" class="align-center" src="../../../../_images/conduit_lengths_1.PNG" />
+<p>The Calculated Length, or orthogonal route, between two pieces of equipment is determined by their Room locations.  A designer can modify the Manual Added Length to account for additional distance.</p>
+<img alt="../../../../_images/conduit_lengths_2.PNG" class="align-center" src="../../../../_images/conduit_lengths_2.PNG" />
+<p>In addition, if the conduits are being routed through a riser shaft, assign a Riser to the terminating equipment.</p>
+<img alt="../../../../_images/conduit_lengths_3.PNG" class="align-center" src="../../../../_images/conduit_lengths_3.PNG" />
+</div>
+<div class="section" id="moving-equipment">
+<span id="floor-plans-move-equipment"></span><h1>Moving Equipment<a class="headerlink" href="#moving-equipment" title="Permalink to this headline">¶</a></h1>
+<p>Move Equipment is intended for designers to quickly place equipment in Rooms.</p>
+<img alt="../../../../_images/move-equipment_1.PNG" class="align-center" src="../../../../_images/move-equipment_1.PNG" />
+<p>There are two collections of Equipment: Orphaned Equipment and Hosted Equipment.  Orphaned Equipment do not have a Room assigned to them.  Hosted Equipment are Rooms.</p>
+<img alt="../../../../_images/move-equipment_2.PNG" class="align-center" src="../../../../_images/move-equipment_2.PNG" />
+<p>Select the Equipment you would like to move.  Drag and drop it in a Room location.</p>
+<img alt="../../../../_images/move-equipment_3.PNG" class="align-center" src="../../../../_images/move-equipment_3.PNG" />
+<p>The Room indicator will notify the designer when the equipment is added.</p>
+<img alt="../../../../_images/move-equipment_4.PNG" class="align-center" src="../../../../_images/move-equipment_4.PNG" />
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../index.html">THRUX</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/index-thrux.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index-user_guide.html"><strong>General Navigation Overview</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index-user_guide.html#getting-started"><strong>Getting Started</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../projectsettings/index-creating_a_new_project.html">Creating a New Project</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index-defining_architectural_elements.html">Defining Architectural Elements</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../archelements/index-arch-elements.html">Architectural Elements</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index-defining_architectural_elements.html#floor-plans">Floor Plans</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../buildingelectricalmodel/index-building_electrical_model.html">Building the Electrical Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../explorersandutilitytools/index-explorers_and_utility_tools.html">Explorers / Utility Design Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utilityworkspaces/index-utility_workspaces.html">Utility Workspaces</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ's</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html#architectural">Architectural</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html#electrical-calculations">Electrical Calculations</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index-user_guide.html"><strong>General Navigation Overview</strong></a><ul>
+  <li><a href="../index-defining_architectural_elements.html">Defining Architectural Elements</a><ul>
+      <li>Previous: <a href="../archelements/index-arch-elements.html" title="previous chapter">Architectural Elements</a></li>
+      <li>Next: <a href="../../buildingelectricalmodel/index-building_electrical_model.html" title="next chapter">Building the Electrical Model</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, KT.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../../../../_sources/source/userguide/definingarchitecturalelements/floorplans/index-floor-plans.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
