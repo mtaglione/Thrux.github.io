@@ -1,0 +1,197 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Architectural Elements &#8212; THRUX 1.0.0.33 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Setup Wizard" href="../floorplans/index-floor-plans.html" />
+    <link rel="prev" title="Defining Architectural Elements" href="../index-defining_architectural_elements.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="architectural-elements">
+<span id="arch-elements"></span><h1>Architectural Elements<a class="headerlink" href="#architectural-elements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="x-grid-y-grid">
+<h2>X Grid / Y Grid<a class="headerlink" href="#x-grid-y-grid" title="Permalink to this headline">¶</a></h2>
+<p>X Grid and Y Grid components are used to establish a location for Rooms.  Equipment are placed inside Rooms, which are effected by point to point calculations.</p>
+<img alt="../../../../_images/XGrid_YGrid.PNG" class="align-center" src="../../../../_images/XGrid_YGrid.PNG" />
+</div>
+<div class="section" id="floor">
+<h2>Floor<a class="headerlink" href="#floor" title="Permalink to this headline">¶</a></h2>
+<p>Floors are used for power density calculations, and to also house rooms.</p>
+<img alt="../../../../_images/Floor.PNG" class="align-center" src="../../../../_images/Floor.PNG" />
+</div>
+<div class="section" id="space-type">
+<h2>Space Type<a class="headerlink" href="#space-type" title="Permalink to this headline">¶</a></h2>
+<p>Space Types are used to assign power densities to architectural entities such as Floors and Rooms.</p>
+<p>For example, engineers perform load massing calculations in order to size their main distribution equipment.  They allocate power differently for floor loads, lighting loads, and mechanical loads.</p>
+<p>A variety of Space Types allows the engineer to study power density requirements of the project.</p>
+<img alt="../../../../_images/Space_Type.PNG" class="align-center" src="../../../../_images/Space_Type.PNG" />
+</div>
+<div class="section" id="room">
+<h2>Room<a class="headerlink" href="#room" title="Permalink to this headline">¶</a></h2>
+<p>Rooms are used to establish locations for equipment.  Based on these locations, engineers can perform their point to point calculations.  Rooms can also be packaged to create custom load packages.</p>
+<img alt="../../../../_images/Room.PNG" class="align-center" src="../../../../_images/Room.PNG" />
+</div>
+<div class="section" id="riser">
+<h2>Riser<a class="headerlink" href="#riser" title="Permalink to this headline">¶</a></h2>
+<p>A Riser is an entity which is used to offset conduit routes.  By default, the length of a conduit route is determined by the the distance between the source and the load.  However, engineers are often allocated Risers, or shaft space, to house their conduits, or feeders.  The conduits are routed from their source, through the Riser, and terminate at the load.</p>
+<img alt="../../../../_images/Riser.PNG" class="align-center" src="../../../../_images/Riser.PNG" />
+</div>
+<div class="section" id="arch-package">
+<h2>Arch. Package<a class="headerlink" href="#arch-package" title="Permalink to this headline">¶</a></h2>
+<p>Architectural Packages are used to model the load, or power density, of a group of architectural elements.</p>
+<p>For example, a group of floors could each have their SpaceType designated as Office, which has a specific power density.  This group of floors can be packaged as a load, and fed from a distribution equipment.</p>
+<p>To create a Load Package, within Architectural Elements, select a group of Floors, or Rooms.  In the orange textbox, enter a name for the Load Package, and then click the (+) button.  To view your Load Packages, click the Arch. Package tab.  These packages can be attached to any distribution board in the network.</p>
+<img alt="../../../../_images/Architectural_Package.PNG" class="align-center" src="../../../../_images/Architectural_Package.PNG" />
+</div>
+<div class="section" id="appliance">
+<h2>Appliance<a class="headerlink" href="#appliance" title="Permalink to this headline">¶</a></h2>
+<p>Appliances are used to calculate the load of residential projects.  Appliances are assigned to a Unit Type.</p>
+<img alt="../../../../_images/Appliance.PNG" class="align-center" src="../../../../_images/Appliance.PNG" />
+</div>
+<div class="section" id="unit-type">
+<h2>Unit Type<a class="headerlink" href="#unit-type" title="Permalink to this headline">¶</a></h2>
+<p>Unit Types are used to group Appliances together, in order to calculate the load of residential projects.  A Unit Type is assigned to an Apartment.</p>
+<img alt="../../../../_images/Unit_Type.PNG" class="align-center" src="../../../../_images/Unit_Type.PNG" />
+</div>
+<div class="section" id="apartment">
+<h2>Apartment<a class="headerlink" href="#apartment" title="Permalink to this headline">¶</a></h2>
+<p>An Apartment contains a Unit Type.  It also contains information regarding its location, and loading information.  A group of Apartments can make up an Apt. Package, or Apartment Package.</p>
+<img alt="../../../../_images/Apartment.PNG" class="align-center" src="../../../../_images/Apartment.PNG" />
+</div>
+<div class="section" id="apt-package">
+<h2>Apt. Package<a class="headerlink" href="#apt-package" title="Permalink to this headline">¶</a></h2>
+<p>Apt. Package, or Apartment Packages are used to group Apartments together in order to calculate a load.</p>
+<img alt="../../../../_images/Apartment_Package.PNG" class="align-center" src="../../../../_images/Apartment_Package.PNG" />
+</div>
+<div class="section" id="load-allocation">
+<h2>Load Allocation<a class="headerlink" href="#load-allocation" title="Permalink to this headline">¶</a></h2>
+<p>Load Allocations are used to supplement the Architectural Packages.  In addition to floor or room power densities, power can be allocated to specific floors.</p>
+<p>A designer may want to account for a load which only occurs on floors of a specific Space Type.  For example, if a designer wanted to account for a 20 HP motor on every Office Floor, they would need to create a new Load Allocation.  Then, they would filter that Allocation by the Floor Space Type, and add it to an Architectural Package.</p>
+<img alt="../../../../_images/Load_Allocation.PNG" class="align-center" src="../../../../_images/Load_Allocation.PNG" />
+</div>
+<div class="section" id="diversification">
+<h2>Diversification<a class="headerlink" href="#diversification" title="Permalink to this headline">¶</a></h2>
+<p>Diversifications allows the designer to create customizable diversity factors which can be applied to different sections or levels of the distibrution system.</p>
+<p>A Root Diversity is a factor applied to Root Level loads.  A Root Diversity cannot be less zero and cannot be greater than the Distribution Diversity.</p>
+<p>A Distribution Diversity is a factor applied to Distribution Level loads.</p>
+<p>An End of Line Diversity is a factor applied to End of Line Loads.</p>
+<img alt="../../../../_images/Diversification.PNG" class="align-center" src="../../../../_images/Diversification.PNG" />
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">THRUX</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/index-thrux.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index-user_guide.html"><strong>General Navigation Overview</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index-user_guide.html#getting-started"><strong>Getting Started</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../projectsettings/index-creating_a_new_project.html">Creating a New Project</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index-defining_architectural_elements.html">Defining Architectural Elements</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Architectural Elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index-defining_architectural_elements.html#floor-plans">Floor Plans</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../buildingelectricalmodel/index-building_electrical_model.html">Building the Electrical Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../explorersandutilitytools/index-explorers_and_utility_tools.html">Explorers / Utility Design Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utilityworkspaces/index-utility_workspaces.html">Utility Workspaces</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ's</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html#architectural">Architectural</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html#electrical-calculations">Electrical Calculations</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index-user_guide.html"><strong>General Navigation Overview</strong></a><ul>
+  <li><a href="../index-defining_architectural_elements.html">Defining Architectural Elements</a><ul>
+      <li>Previous: <a href="../index-defining_architectural_elements.html" title="previous chapter">Defining Architectural Elements</a></li>
+      <li>Next: <a href="../floorplans/index-floor-plans.html" title="next chapter">Setup Wizard</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, KT.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../../../../_sources/docs/userguide/definingarchitecturalelements/archelements/index-arch-elements.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

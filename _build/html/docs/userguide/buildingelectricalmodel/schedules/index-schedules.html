@@ -1,0 +1,200 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Schedules &#8212; THRUX 1.0.0.33 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Riser" href="../riser/index-riser.html" />
+    <link rel="prev" title="One-Line" href="../one-line/index-one-line.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="schedules">
+<h1><strong>Schedules</strong><a class="headerlink" href="#schedules" title="Permalink to this headline">¶</a></h1>
+<p>Schedules are a tabular representation of your distribution system.  Schedules are primarily used for Distribution Boards, Switchboards, and Panelboards.  Not every piece of equipment has a dedicated schedule.  For example, end of line equipment such as motors do not have schedules.</p>
+<p>The top portion of the workspace shows all open schedules.  Schedules can be exported to .csv or .dwg formats.</p>
+<p>Specify board options like ground bus, isolated ground bus, etc., by clicking inside the textbox.  Additional options for breakers can also be specified.</p>
+<p>Other circuit properties like OCPD and conductor sizes are calculated based on the load.</p>
+<div class="section" id="open-schedule">
+<h2>Open Schedule<a class="headerlink" href="#open-schedule" title="Permalink to this headline">¶</a></h2>
+<p>To open a schedule, either use the Search (Magnifying glass) button, or use the Add (+) button.</p>
+<img alt="../../../../_images/schedules-add_schedule.PNG" src="../../../../_images/schedules-add_schedule.PNG" />
+</div>
+<div class="section" id="copy-copy-paste-circuits">
+<span id="schedules-copying-equipment"></span><span id="index-0"></span><h2>Copy / Copy / Paste Circuits<a class="headerlink" href="#copy-copy-paste-circuits" title="Permalink to this headline">¶</a></h2>
+<p>Once a schedule is open, to copy a circuit, select the circuit number.  Selection will be highlighted in cyan.</p>
+<img alt="../../../../_images/schedules-copy_circuit_1.PNG" src="../../../../_images/schedules-copy_circuit_1.PNG" />
+<p>CTRL+C to copy or CTRL+X to cut. The selection will highlight pink and be added to the clipboard.</p>
+<img alt="../../../../_images/schedules-copy_circuit_2.PNG" src="../../../../_images/schedules-copy_circuit_2.PNG" />
+<p>Then, select the source or equipment to paste to, and click Paste or use CTRL+V.  Equipment can be pasted between different schedules.</p>
+<img alt="../../../../_images/schedules-copy_circuit_3.PNG" src="../../../../_images/schedules-copy_circuit_3.PNG" />
+</div>
+<div class="section" id="delete-equipment">
+<span id="index-1"></span><h2>Delete Equipment<a class="headerlink" href="#delete-equipment" title="Permalink to this headline">¶</a></h2>
+<p>To delete equipment, select the circuit number.  Click Delete (Trash Symbol) or use DEL to delete.</p>
+<img alt="../../../../_images/schedules-delete_equipment.PNG" src="../../../../_images/schedules-delete_equipment.PNG" />
+</div>
+<div class="section" id="reset-to-code-minimum">
+<span id="index-2"></span><h2>Reset to Code Minimum<a class="headerlink" href="#reset-to-code-minimum" title="Permalink to this headline">¶</a></h2>
+<p>If circuit properties are manually modified and generate flags, a designer can reset the circuit properties to be the code minimum value.  Select the circuit number, then click Reset to Code Minimum (Wand Symbol).</p>
+<img alt="../../../../_images/schedules-reset_to_code_minimum.PNG" src="../../../../_images/schedules-reset_to_code_minimum.PNG" />
+</div>
+<div class="section" id="edit-properties">
+<span id="index-3"></span><h2>Edit Properties<a class="headerlink" href="#edit-properties" title="Permalink to this headline">¶</a></h2>
+<p>Select a circuit number, and then click the Edit Properties (Gear Symbol) to open the Properties Explorer.</p>
+<img alt="../../../../_images/schedules-edit_properties.PNG" src="../../../../_images/schedules-edit_properties.PNG" />
+<span class="target" id="schedules-rehosting"><span id="index-4"></span></span></div>
+<div class="section" id="rehosting-equipment-reordering-circuits">
+<span id="index-5"></span><h2>Rehosting Equipment / Reordering Circuits<a class="headerlink" href="#rehosting-equipment-reordering-circuits" title="Permalink to this headline">¶</a></h2>
+<p>The ordering of circuits can affect the overall construction of the board.  To move circuits or to change a circuits source, select the circuit number, and then click and drag the grip icon.</p>
+<img alt="../../../../_images/schedules-rehost_1.PNG" src="../../../../_images/schedules-rehost_1.PNG" />
+<img alt="../../../../_images/schedules-rehost_2.PNG" src="../../../../_images/schedules-rehost_2.PNG" />
+</div>
+<div class="section" id="lock-unlock">
+<h2>Lock / Unlock<a class="headerlink" href="#lock-unlock" title="Permalink to this headline">¶</a></h2>
+<p>A user can lock a selection which will prevent elements from being modified.  Select a circuit number, and then click the Lock / Unlock (Lock Symbol) button.</p>
+<img alt="../../../../_images/schedules-lock_unlock_1.PNG" src="../../../../_images/schedules-lock_unlock_1.PNG" />
+<img alt="../../../../_images/schedules-lock_unlock_2.PNG" class="align-center" src="../../../../_images/schedules-lock_unlock_2.PNG" />
+</div>
+<div class="section" id="adding-ocpds">
+<span id="index-6"></span><h2>Adding OCPDs<a class="headerlink" href="#adding-ocpds" title="Permalink to this headline">¶</a></h2>
+<p>The amount of protective devices a distribution board supports is proportional to its physical installation.  Equipment can not be added to the distribution board unless there is space alotted.  To add a protective device, click Add OCPD.</p>
+<img alt="../../../../_images/schedules-add_ocpd.PNG" class="align-center" src="../../../../_images/schedules-add_ocpd.PNG" />
+</div>
+<div class="section" id="navigate">
+<span id="index-7"></span><h2>Navigate<a class="headerlink" href="#navigate" title="Permalink to this headline">¶</a></h2>
+<p>Right-click on a circuit element to open an additional utility menu.  A designer can navigate to other schedules or to the One-Line by selecting Scope to Schedule, or Scope to One-Line.</p>
+<img alt="../../../../_images/schedules-navigate.PNG" class="align-center" src="../../../../_images/schedules-navigate.PNG" />
+</div>
+<div class="section" id="converting-breaker-switch-and-fuse">
+<h2>Converting Breaker/Switch and Fuse<a class="headerlink" href="#converting-breaker-switch-and-fuse" title="Permalink to this headline">¶</a></h2>
+<p>By default, Distribution Boards use breakers as their protective devices, while Switchboards use switch and fuse combinations.  To convert a board’s protective devices, click the Settings (Gear Symbol) button in the top left of the schedule.  Then under Change Schedule Type, select Convert to Switch/Fuse.</p>
+<img alt="../../../../_images/schedules-ocpd_conversion.PNG" class="align-center" src="../../../../_images/schedules-ocpd_conversion.PNG" />
+</div>
+<div class="section" id="schedule-views">
+<h2>Schedule Views<a class="headerlink" href="#schedule-views" title="Permalink to this headline">¶</a></h2>
+<p>Groups of schedules can be saved for a later viewing.  Open the schedules to group, then click Save As New View, and enter a name.  Return to this view at any time.</p>
+<img alt="../../../../_images/schedules-save_new_view.PNG" class="align-center" src="../../../../_images/schedules-save_new_view.PNG" />
+</div>
+<div class="section" id="exporting">
+<span id="exporting-schedules"></span><span id="index-8"></span><h2>Exporting<a class="headerlink" href="#exporting" title="Permalink to this headline">¶</a></h2>
+<p>To export the open schedules, click Export (Down Arrow) button in the top right of the workspace.  Then choose Excel or AutoCAD to export to .csv or .dwg.</p>
+<img alt="../../../../_images/schedules-exporting.PNG" class="align-center" src="../../../../_images/schedules-exporting.PNG" />
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">THRUX</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/index-thrux.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index-user_guide.html"><strong>General Navigation Overview</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index-user_guide.html#getting-started"><strong>Getting Started</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../projectsettings/index-creating_a_new_project.html">Creating a New Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../definingarchitecturalelements/index-defining_architectural_elements.html">Defining Architectural Elements</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index-building_electrical_model.html">Building the Electrical Model</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../one-line/index-one-line.html"><strong>One-Line</strong></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><strong>Schedules</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../riser/index-riser.html"><strong>Riser</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../explorersandutilitytools/index-explorers_and_utility_tools.html">Explorers / Utility Design Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utilityworkspaces/index-utility_workspaces.html">Utility Workspaces</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ's</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html#architectural">Architectural</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html#electrical-calculations">Electrical Calculations</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index-user_guide.html"><strong>General Navigation Overview</strong></a><ul>
+  <li><a href="../index-building_electrical_model.html">Building the Electrical Model</a><ul>
+      <li>Previous: <a href="../one-line/index-one-line.html" title="previous chapter"><strong>One-Line</strong></a></li>
+      <li>Next: <a href="../riser/index-riser.html" title="next chapter"><strong>Riser</strong></a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, KT.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../../../../_sources/docs/userguide/buildingelectricalmodel/schedules/index-schedules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

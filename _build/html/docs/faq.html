@@ -1,0 +1,239 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>General &#8212; THRUX 1.0.0.33 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Change Tracking" href="userguide/utilityworkspaces/changetracking/index-change_tracking.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="general">
+<span id="frequently-asked-questions"></span><h1>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h1>
+<table class="hlist"><tr><td><ul>
+<li><p class="first">Is THRUX compatible with Revit?</p>
+<blockquote>
+<div><p>Coming soon.</p>
+</div></blockquote>
+</li>
+<li><p class="first">How do I see what’s included in each update?</p>
+<blockquote>
+<div><p>Subscribe to our newsletter here:</p>
+</div></blockquote>
+</li>
+<li><p class="first">How do I export my drawings to AutoCAD?</p>
+<blockquote>
+<div><p>Open the <a class="reference internal" href="userguide/buildingelectricalmodel/schedules/index-schedules.html"><span class="doc">Schedules</span></a> workspace, and open the schedules you would like to export.  Click the down arrow in the top right, then click Export to AutoCAD.</p>
+<p>See <a class="reference internal" href="userguide/buildingelectricalmodel/schedules/index-schedules.html#exporting-schedules"><span class="std std-ref">Exporting Schedules</span></a> for more details.</p>
+</div></blockquote>
+</li>
+<li><p class="first">I’m in the One-Line, how do I create equipment?</p>
+<blockquote>
+<div><p>All equipment need to have a source of power, so make sure that a source like a Utility or Generator exists first.  Right-click inside the <a class="reference internal" href="userguide/buildingelectricalmodel/one-line/index-one-line.html"><span class="doc">One-Line</span></a>, click Add Source, then choose Utility or Generator.</p>
+<p>If the source is not yet defined, create an Unhosted Equipment.  Right-click inside the workspace, and then click Add Unhosted Equipment.  Use the wizard to create the equipment.</p>
+<p>See <a class="reference internal" href="userguide/buildingelectricalmodel/one-line/index-one-line.html#one-line-adding-a-source"><span class="std std-ref">Adding a Source</span></a> or <a class="reference internal" href="userguide/buildingelectricalmodel/one-line/index-one-line.html#one-line-adding-equipment"><span class="std std-ref">Adding Equipment</span></a> for examples.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Is there a way to create groups of equipment?</p>
+<blockquote>
+<div><p>Copying an equipment will copy all of it’s downstream equipment.  Select the equipment and use CTRL+C to copy.  Then select a new source and use CTRL+V to paste.</p>
+<p>See <a class="reference internal" href="userguide/buildingelectricalmodel/one-line/index-one-line.html#one-line-copying-equipment"><span class="std std-ref">here</span></a> for an example in the One-Line or <a class="reference internal" href="userguide/buildingelectricalmodel/schedules/index-schedules.html#schedules-copying-equipment"><span class="std std-ref">here</span></a> for an example in the Schedules.</p>
+</div></blockquote>
+</li>
+<li><p class="first">I’ve created a network, but I forgot to add a distribution board, or transfer switch, or some type of intermediate node.  How can I add this without deleting what I have?</p>
+<blockquote>
+<div><p>You have the ability to rehost circuits by dragging and dropping them from one source to another.  Simply rehost a section of your network to another source.  Then add your equipment, and reattach or feed your network from your equipment.</p>
+<p>See <a class="reference internal" href="userguide/buildingelectricalmodel/one-line/index-one-line.html#one-line-rehosting"><span class="std std-ref">here</span></a> for an example in the One-Line or <a class="reference internal" href="userguide/buildingelectricalmodel/schedules/index-schedules.html#schedules-rehosting"><span class="std std-ref">here</span></a> for an example in the Schedules.</p>
+</div></blockquote>
+</li>
+<li><p class="first">How do I create a bus duct?</p>
+<blockquote>
+<div><p>Select an equipment.  Then select Add Equipment to create a bus duct.</p>
+<p>See <a class="reference internal" href="userguide/buildingelectricalmodel/one-line/index-one-line.html#one-line-bus-duct"><span class="std std-ref">here</span></a> for an example in the One-Line.</p>
+</div></blockquote>
+</li>
+<li><p class="first">How do I connect a transfer switch?</p>
+<blockquote>
+<div><p>After a transfer switch is created, connect it’s sources by selecting Add Equipment, and then click the Existing dropdown to select the transfer switch.</p>
+<p>See <a class="reference internal" href="userguide/buildingelectricalmodel/one-line/index-one-line.html#one-line-transfer-switch"><span class="std std-ref">here</span></a> for more details.  This is also available in the <a class="reference internal" href="userguide/buildingelectricalmodel/schedules/index-schedules.html"><span class="doc">Schedules</span></a> workspace.</p>
+</div></blockquote>
+</li>
+<li><p class="first">I’ve created my distribution network, but I haven’t assigned any Rooms yet.  Is there a way to move my equipment into Rooms?</p>
+<blockquote>
+<div><p>See <a class="reference internal" href="userguide/definingarchitecturalelements/floorplans/index-floor-plans.html#floor-plans-move-equipment"><span class="std std-ref">here</span></a> for an example in the Floor Plans.</p>
+</div></blockquote>
+</li>
+</ul>
+</td></tr></table>
+</div>
+<hr class="docutils" />
+<div class="section" id="architectural">
+<h1>Architectural<a class="headerlink" href="#architectural" title="Permalink to this headline">¶</a></h1>
+<table class="hlist"><tr><td><ul>
+<li><p class="first">Do I need to create the Architectural Elements or do I need to use the Floor Plans workspace?</p>
+<blockquote>
+<div><p>No.  These workspaces aid in the design process, and allow the designer to quickly alter the locations of equipment in their design, as the Architectural Elements change.</p>
+<p>These workspaces aid in calculating distances between equipment, which effect point-to-point calculations.</p>
+<p>Though it is highly recommended, it is possible to manually enter all feeder and branch lengths.</p>
+</div></blockquote>
+</li>
+<li><p class="first">I’m in the Floor Plans.  How do I create my columns and floors?</p>
+<blockquote>
+<div><p>Use the Setup Wizard to create the XGrid and YGrid (column) components, and Floors.  Use the Grid Editor to modify the columns, or manually modify these components in the Arch. Elements workspace.</p>
+<p>See <a class="reference internal" href="userguide/definingarchitecturalelements/index-defining_architectural_elements.html#floor-plans-overview"><span class="std std-ref">Floor Plans</span></a> or <a class="reference internal" href="userguide/definingarchitecturalelements/archelements/index-arch-elements.html#arch-elements"><span class="std std-ref">Arch. Elements</span></a> for more information.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Is there a way to move my equipment in one Room to another location?</p>
+<blockquote>
+<div><p>Use the Floor Plans to shift room locations.  Drag and drop the room from one location to the next.</p>
+<p>Or, manually modify the room characteristics by using the <a class="reference internal" href="userguide/definingarchitecturalelements/archelements/index-arch-elements.html#arch-elements"><span class="std std-ref">Arch. Elements</span></a> workspace.</p>
+<p>All equipment in the room will update their feeder lengths.</p>
+</div></blockquote>
+</li>
+</ul>
+</td></tr></table>
+</div>
+<hr class="docutils" />
+<div class="section" id="electrical-calculations">
+<h1>Electrical Calculations<a class="headerlink" href="#electrical-calculations" title="Permalink to this headline">¶</a></h1>
+<table class="hlist"><tr><td><ul>
+<li><p class="first">How is the length of a bus duct determined?</p>
+<blockquote>
+<div><p>A bus duct must be assigned a Room.  Every branch of the bus duct must be assigned a room.</p>
+<p>Pipe and wire is used until it terminates and transitions to bus duct at the Room of the bus duct.</p>
+<p>The vertical run of the bus duct is determined by the vertical distance between the Room of the branch load and Room of the bus duct.</p>
+<p>The bus duct transitions to pipe and wire, and the branch circuit length is determined from the distance between the Room of the bus duct, and the Room of the load.</p>
+</div></blockquote>
+</li>
+<li><p class="first">What is Load Capacity?</p>
+<blockquote>
+<div><p>Load Capacity is a custom size modified by the designer.  Protective devices are selected based on the Load Capacity.  Conductors are also selected based the Load Capacity.</p>
+<p>For example, if a designer entered 401A as the Load Capacity of a 3-ø Distribution Board, then a 600AF, 450AT breaker would be selected, fed via 3#600 kcmils phase conductors.</p>
+</div></blockquote>
+</li>
+<li><p class="first">What is Load Override?</p>
+<blockquote>
+<div><p>Load Capacity is a custom size modified by the designer.  Protective devices are selected based on the Load Capacity.  Conductors are also selected based the Load Capacity.</p>
+<p>For example, if a designer entered 401A as the Load Capacity of a 3-ø Distribution Board, then a 600AF, 450AT breaker would be selected, fed via 3#600 kcmils phase conductors.</p>
+</div></blockquote>
+</li>
+<li><p class="first">What is % Design Spare Capacity?</p>
+<blockquote>
+<div><p>% Design Spare Capacity is an adjustment factor which is based on the Code Demand Load.</p>
+<p>For example, if a distribution board has a Code Demand Load of 25A, and also has a % Design Spare Capacity of 20%, the Net Load on the distribution board will read 30A.</p>
+</div></blockquote>
+</li>
+<li><p class="first">How do I enter the available SCC from the Utility?</p>
+<blockquote>
+<div><p>Select the Utility source.  Under the “Miscellaneous” property grouping, enter the value under Available SCC (kA).</p>
+<p>See <a class="reference internal" href="userguide/buildingelectricalmodel/one-line/index-one-line.html#one-line-scc"><span class="std std-ref">here</span></a> for an example.</p>
+</div></blockquote>
+</li>
+<li><p class="first">How do I model a tap?</p>
+<blockquote>
+<div><p>To model a tap, create a Bus Node in between the source and the load.</p>
+<p>See <a class="reference internal" href="userguide/buildingelectricalmodel/one-line/index-one-line.html#one-line-tap"><span class="std std-ref">here</span></a> for an example.</p>
+</div></blockquote>
+</li>
+</ul>
+</td></tr></table>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">THRUX</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview/index-thrux.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="userguide/index-user_guide.html"><strong>General Navigation Overview</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide/index-user_guide.html#getting-started"><strong>Getting Started</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ's</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#architectural">Architectural</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#electrical-calculations">Electrical Calculations</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="userguide/utilityworkspaces/changetracking/index-change_tracking.html" title="previous chapter">Change Tracking</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, KT.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../_sources/docs/faq.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
